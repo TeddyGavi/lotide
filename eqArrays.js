@@ -21,7 +21,6 @@ const assertEqual = (actual, expected) => {
 
 const eqArrays = (arrayOne, arrayTwo) => {
   if (arrayOne.length !== arrayTwo.length) {
-    //return `Please enter Arrays that are the same length. False`
     return false;
   } else {
     let trueCounter = 0;

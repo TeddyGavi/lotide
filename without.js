@@ -23,6 +23,7 @@ const assertArraysEqual = (arrOne, arrTwo) => {
   }
 };
 
+//my original solution
 const without = (source, itemsToRemove) => {
   const filtered = [...source];
   for (let i = 0; i < source.length; i++){
@@ -36,12 +37,13 @@ const without = (source, itemsToRemove) => {
   return filtered;
 }
 
+// the filtered solution i needed help with
 const withoutF = (source, itemsToRemove) => {
   return source.filter(function(el) {
     return !itemsToRemove.includes(el); 
   })
 }
-
+// a new loop that i wasn't aware of that makes things way simplier
 const withoutAdd = (source, itemsToRemove) => {
   const accumulator = [];
   for (const element in source){

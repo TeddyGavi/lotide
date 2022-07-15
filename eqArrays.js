@@ -41,6 +41,22 @@ const eqArrays = (arrayOne, arrayTwo) => {
   }
 };
 
+/* const eqArraysInclude = (firstArr, secondArr) => {
+  let tOrFString = "";
+  if (firstArr.length !== secondArr.length) {
+    return false;
+  } else {
+  
+  for (const ele of firstArr) {
+    if (secondArr.includes(ele)) {
+      tOrFString = "true";
+      console.log(tOrFString);
+    }
+  }
+}
+return tOrFString === "true" ? true : false;
+} */
+
 assertEqual(eqArrays([1, 2, 3], [1, 2, 3,]), true); // => true
 assertEqual(eqArrays([1, 2, 3], [3, 2, 1]), false); // => false
 assertEqual(eqArrays(["1", "2", "3"], ["1", "2", "3"]), true); // => true

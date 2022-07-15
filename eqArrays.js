@@ -5,6 +5,10 @@ const assertEqual = (actual, expected) => {
     console.log(`🤢🤢🤢 Assertion Failed: ${actual} !== ${expected}`);
   }
 };
+
+/* ----  Implement a function eqArrays which takes in two arrays and returns true or false, based on a perfect match. <---- */
+
+
 //first compare if the arrays are the same length
 /* const compareArrayLength = (arrOne, arrTwo) => {
   if (arrOne.length === arrTwo.length){
@@ -15,8 +19,9 @@ const assertEqual = (actual, expected) => {
   return arrOne.length === arrTwo.length ? true : `Please enter Arrays that are the same length.`;
 } */
 
-//might need to make a function that
-//loop through each array and compare each item strictly to see if they are equal
+// input is two arrays, the output is true if the the arrays are the same, else the output is false. 
+// to make a function that
+//loops through each array and compare each item strictly to see if they are equal
 
 
 const eqArrays = (arrayOne, arrayTwo) => {

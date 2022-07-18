@@ -19,7 +19,7 @@ const assertEqual = (actual, expected) => {
   return arrOne.length === arrTwo.length ? true : `Please enter Arrays that are the same length.`;
 } */
 
-// input is two arrays, the output is true if the the arrays are the same, else the output is false. 
+// input is two arrays, the output is true if the the arrays are the same, else the output is false.
 // to make a function that
 //loops through each array and compare each item strictly to see if they are equal
 
@@ -28,16 +28,12 @@ const eqArrays = (arrayOne, arrayTwo) => {
   if (arrayOne.length !== arrayTwo.length) {
     return false;
   } else {
-    let trueCounter = 0;
     for (let i = 0; i < arrayOne.length; i++) {
       if (arrayOne[i] !== arrayTwo[i]) {
         return false;
-      } else {
-        trueCounter++;
       }
     }
- 
-    return trueCounter === arrayOne.length ? true : false;
+    return true;
   }
 };
 

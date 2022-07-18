@@ -23,7 +23,7 @@ const assertArraysEqual = (arrOne, arrTwo) => {
   }
 };
 
-/* const test = [1, 2, 3, 4];
+ const test = [1, 2, 3, 4];
 for (let i in test){
   console.log( `This is a for-in ${i}`);
 }
@@ -31,7 +31,7 @@ for (let i in test){
 for (let i of test){
   console.log(`this is a for-of ${i}`);
 }
- */
+ 
 
 
 

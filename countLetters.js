@@ -12,9 +12,9 @@ const countLetters = (countLettersInMe) => {
   const result = {};
   for (const letter of toCount) {
     result[letter] = (result[letter] || result.hasOwnProperty(letter)) + 1;
-  } 
+  }
   return result;
-}
+};
 
 //Gords solution below!
 

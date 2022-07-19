@@ -46,13 +46,13 @@ const obj1 = {
   name: "Billy bob bo",
   occupation: "tea drinker",
   salary: [85, 90, 100],
-}
+};
 
 const obj2 = {
   name: "Billy bob bo",
   salary: [85, 90, 100],
   occupation: "tea drinker",
-}
+};
 
 
 

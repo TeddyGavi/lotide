@@ -27,10 +27,10 @@ const eqObjects = (object1, object2) => {
     return false;
   } else {
     for (const key of keysForObj1) {
-      if (Array.isArray(object1[key])) {
-        return eqArrays(object1[key], object2[key]);
+      if (Array.isArray(object1[key]) && !eqArrays(object1[key], object2[key])){
+        return false;
       }
-      if (object1[key] !== object2[key]) {
+      else if (object1[key] !== object2[key]) {
         return false;
       }
     }

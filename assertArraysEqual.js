@@ -2,16 +2,12 @@ const eqArrays = (arrayOne, arrayTwo) => {
   if (arrayOne.length !== arrayTwo.length) {
     return false;
   } else {
-    let trueCounter = 0;
     for (let i = 0; i < arrayOne.length; i++) {
       if (arrayOne[i] !== arrayTwo[i]) {
         return false;
-      } else {
-        trueCounter++;
       }
     }
- 
-    return trueCounter === arrayOne.length ? true : false;
+    return true;
   }
 };
 

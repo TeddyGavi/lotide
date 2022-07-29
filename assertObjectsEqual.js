@@ -14,23 +14,27 @@ const eqArrays = (arrayOne, arrayTwo) => {
 };
 
 const eqObjects = (object1, object2) => {
-  const keysForObj1 = Object.keys(object1);
-  const keysForObj2 = Object.keys(object2);
+  const keys1 = Object.keys(object1);
+  const keys2 = Object.keys(object2);
 
-  if (keysForObj1.length !== keysForObj2.length) {
+  if (keys1.length !== keys2.length) {
     return false;
-  } else {
-    for (const key of keysForObj1) {
-      if (Array.isArray(object1[key]) && !eqArrays(object1[key], object2[key])) {
-        return false;
-      }
-      else if (object1[key] !== object2[key]) {
-        return false;
-      }
-    }
   }
+  for (const x of keys1) {
+
+    if (Array.isArray(object1[x])) {
+      if (!eqArrays(object1[x], object2[x])) {
+        return false;
+      };
+    }
+    else if (object1[x] !== object2[x]) {
+      return false;
+    };
+  }
+
   return true;
 };
+
 
 const assertObjectsEqual = (object1, object2) => {
   if (eqObjects(object1, object2)) {
@@ -57,4 +61,6 @@ const obj2 = {
 
 
 
-assertObjectsEqual(obj1, obj2);
+// assertObjectsEqual(obj1, obj2);
+
+module.exports = { eqObjects, eqArrays }

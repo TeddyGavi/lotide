@@ -20,21 +20,23 @@ const eqArrays = (arrayOne, arrayTwo) => {
 };
 
 const eqObjects = (object1, object2) => {
-  const keysForObj1 = Object.keys(object1);
-  const keysForObj2 = Object.keys(object2);
+  const keys1 = Object.keys(object1);
+  const keys2 = Object.keys(object2);
 
-  if (keysForObj1.length !== keysForObj2.length) {
+  if (keys1.length !== keys2.length) {
     return false;
-  } else {
-    for (const key of keysForObj1) {
-      if (Array.isArray(object1[key]) && !eqArrays(object1[key], object2[key])){
-        return false;
-      }
-      else if (object1[key] !== object2[key]) {
-        return false;
-      }
-    }
   }
+  for (const x of keys1) {
+    if (Array.isArray(object1[x])) {
+      if (!eqArrays(object1[x], object2[x])) {
+        return false;
+      };
+    }
+    else if (object1[x] !== object2[x]) {
+      return false;
+    };
+  }
+
   return true;
 };
 
@@ -67,7 +69,7 @@ const dc = {
 
 const cd2 = {
   c: "1",
-  d: ["2", 3, 4]
+  d: ["2", 3, 4],
 };
 const tops = {
   a: [4, 5, 6, 6],
@@ -79,9 +81,8 @@ const btm = {
   c: "the house",
   b: [2, 2, 2, 2],
 };
-//console.log(eqObjects(ab, ba));
-assertEqual(eqObjects(ab, ba),true);
+assertEqual(eqObjects(ab, ba), true);
 assertEqual(eqObjects(ab, abc), false);
 assertEqual(eqObjects(cd, dc), true);
 assertEqual(eqObjects(cd, cd2), false);
-assertEqual(eqObjects(tops, btm), true);
+assertEqual(eqObjects(tops, btm), false);

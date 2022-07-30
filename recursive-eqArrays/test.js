@@ -25,8 +25,8 @@ describe("#eqArraysRecursion, will compare two arrays and return true or false, 
     expect(eqArraysRecursion([[2, 3 [[[4, 1]]], [[[[[5]]]]]]], [[2, 3 [[[4, 1]]], [[[[[5]]]]]]])).to.be.true;
   })
 
-  it("should return false given two deeply nested arrays taht aren't equal", () => {
-    expect(eqArraysRecursion([[2, 3 [[[4]]], [[[[[5]]]]]]], [[2, 3 [[[4, 1]]], [[[[[5]]]]]]])).to.be.true;
+  it("should return false given two deeply nested arrays that aren't equal", () => {
+    expect(eqArraysRecursion([[2, 3], [[[4]]], [[[[[5]]]]]], [[2, 3], [[[4, 1]]], [[[[[5]]]]]])).to.be.false;
   })
 
   it("should return false when given a undefiend input", () => {

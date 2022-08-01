@@ -1,5 +1,5 @@
-const assertEqual = require("../assertEqual")
-const head = require("../head")
+const assertEqual = require("../assertEqual");
+const head = require("../head");
 
 console.log(assertEqual((head([1, 2])), 1));
 console.log(assertEqual((head([4, 2])), 4));

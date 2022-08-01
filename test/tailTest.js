@@ -1,9 +1,9 @@
-const assertArraysEqual = require("../assertArraysEqual")
-const assertEqual = require("../assertEqual")
-const tail = require("../tail")
+const assertArraysEqual = require("../assertArraysEqual");
+const assertEqual = require("../assertEqual");
+const tail = require("../tail");
 
 const result = tail(["Hello", "Lighthouse", "Labs"]);
-console.log(result)
+console.log(result);
 const resultEmpty = tail([]);
 const resultOne = tail(["Test"]);
 console.log(resultEmpty, resultOne);

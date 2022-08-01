@@ -3,10 +3,11 @@ const assertEqual = require("../assertEqual");
 const tail = require("../tail");
 
 const result = tail(["Hello", "Lighthouse", "Labs"]);
-console.log(result);
 const resultEmpty = tail([]);
 const resultOne = tail(["Test"]);
-console.log(resultEmpty, resultOne);
+
+
+
 //had to require the arrays equal function here in order to compare arrays in the following way.
 assertArraysEqual(tail(["Hello", "Lighthouse", "Labs"]), ["Lighthouse", "Labs"]);
 

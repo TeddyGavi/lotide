@@ -13,9 +13,9 @@ const eqArrays = (arrayOne, arrayTwo) => {
 
 const assertArraysEqual = (arrOne, arrTwo) => {
   if (eqArrays(arrOne, arrTwo)) {
-    console.log(`Arrays are Equal, Hooray!`)
+    console.log(`Arrays are Equal, Hooray!`);
   } else {
-    console.log(`Arrays are not Equal, Boooo`)
+    console.log(`Arrays are not Equal, Boooo`);
   }
 };
 
@@ -25,12 +25,12 @@ const takeUntil = function(array, callback) {
   const result = [];
   for (const item of array) {
     if (!callback(item)) {
-    result.push(item);
-  } else {
- return result;
+      result.push(item);
+    } else {
+      return result;
+    }
   }
-}
-}
+};
 
 const results1 = takeUntil(data1, x => x < 0);
 console.log(results1);
@@ -43,4 +43,4 @@ console.log(results2);
 
 
 
-assertArraysEqual(results1, [1, 2, 5, 7, 2])
+assertArraysEqual(results1, [1, 2, 5, 7, 2]);

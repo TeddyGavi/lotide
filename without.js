@@ -17,45 +17,45 @@ const eqArrays = (arrayOne, arrayTwo) => {
 
 const assertArraysEqual = (arrOne, arrTwo) => {
   if (eqArrays(arrOne, arrTwo)) {
-    console.log(`Arrays are Equal, Hooray!`)
+    console.log(`Arrays are Equal, Hooray!`);
   } else {
-    console.log(`Arrays are not Equal, Boooo`)
+    console.log(`Arrays are not Equal, Boooo`);
   }
 };
 
 //my original solution
 const without = (source, itemsToRemove) => {
   const filtered = [...source];
-  for (let i = 0; i < source.length; i++){
-    for (let j = 0; j < itemsToRemove.length; j++){
-      if (itemsToRemove[j] === source[i]){
+  for (let i = 0; i < source.length; i++) {
+    for (let j = 0; j < itemsToRemove.length; j++) {
+      if (itemsToRemove[j] === source[i]) {
       //this i is the index of the item to remove
-       filtered.splice(i, 1);
-      } 
+        filtered.splice(i, 1);
+      }
     }
   }
   return filtered;
-}
+};
 
 // the filtered solution i needed help with
 const withoutF = (source, itemsToRemove) => {
   return source.filter(function(el) {
-    return !itemsToRemove.includes(el); 
-  })
-}
+    return !itemsToRemove.includes(el);
+  });
+};
 // a new loop that i wasn't aware of that makes things way simplier
 const withoutAdd = (source, itemsToRemove) => {
   const accumulator = [];
-  for (const element in source){
+  for (const element in source) {
     if (!itemsToRemove.includes(element)) {
       accumulator.push(element);
     }
   }
 
   return accumulator;
-}
+};
 
-/* 
+/*
   const filtered = source.filter(function(currentElement, index) {
     //console.log(index);
     //console.log(currentElement);

@@ -11,7 +11,12 @@ const countLetters = (countLettersInMe) => {
   const toCount = countLettersInMe.toLowerCase().replace(/\s/g, "");
   const result = {};
   for (const letter of toCount) {
-    result[letter] = (result[letter] || result.hasOwnProperty(letter)) + 1;
+    // result[letter] = (result[letter] || result.hasOwnProperty(letter)) + 1;
+    if(result[letter]) {
+      result[letter] += 1;
+    } else {
+      result[letter] = 1;
+    }
   }
   return result;
 };
@@ -31,4 +36,5 @@ const countLetters = (countLettersInMe) => {
 };
  */
 console.log(countLetters("Lighthouse in the house"));
+console.log(countLetters("racecar"))
 

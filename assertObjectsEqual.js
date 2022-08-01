@@ -25,11 +25,10 @@ const eqObjects = (object1, object2) => {
     if (Array.isArray(object1[x])) {
       if (!eqArrays(object1[x], object2[x])) {
         return false;
-      };
-    }
-    else if (object1[x] !== object2[x]) {
+      }
+    } else if (object1[x] !== object2[x]) {
       return false;
-    };
+    }
   }
 
   return true;
@@ -63,4 +62,4 @@ const obj2 = {
 
 // assertObjectsEqual(obj1, obj2);
 
-module.exports = { eqObjects, eqArrays }
+module.exports = { eqObjects, eqArrays };

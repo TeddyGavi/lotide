@@ -16,21 +16,22 @@ const eqArraysRecursion = require("./recursive-eqArrays/index");
 const eqObjectsRecursion = require("./recursive-eqObjects/index");
 
 module.exports = {
-  head: head,
-  tail: tail,
-  middle: middle,
-  countLetters: countLetters,
-  countOnly: countOnly,
-  eqArrays: eqArrays,
-  eqObjects: eqObjects,
-  findKey: findKey,
-  findKeyByValue: findKeyByValue,
-  flatten: flatten,
-  letterPositions: letterPositions,
-  map: map,
-  takeUntil: takeUntil,
-  without: without,
-  eqArraysRecursion: eqArraysRecursion,
-  eqObjectsRecursion: eqObjectsRecursion,
+  
+  countLetters,
+  countOnly,
+  eqArrays,
+  eqArraysRecursion,
+  eqObjects,
+  eqObjectsRecursion,
+  findKey,
+  findKeyByValue,
+  flatten,
+  head,
+  letterPositions,
+  middle,
+  map,
+  tail,
+  takeUntil,
+  without,
 
 }

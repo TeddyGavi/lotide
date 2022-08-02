@@ -1,24 +1,18 @@
-const assertEqual = (actual, expected) => {
-  if (actual === expected) {
-    console.log(`🖖🖖🖖 Assertion Passed: ${actual} === ${expected}`);
-  } else {
-    console.log(`🤢🤢🤢 Assertion Failed: ${actual} !== ${expected}`);
-  }
-};
-
-
 const countLetters = (countLettersInMe) => {
-  const toCount = countLettersInMe.toLowerCase().replace(/\s/g, "");
-  const result = {};
-  for (const letter of toCount) {
-    // result[letter] = (result[letter] || result.hasOwnProperty(letter)) + 1;
-    if(result[letter]) {
-      result[letter] += 1;
-    } else {
-      result[letter] = 1;
+  if (typeof countLettersInMe === "string") {
+    const toCount = countLettersInMe.toLowerCase().replace(/\s/g, "");
+    const result = {};
+    for (const letter of toCount) {
+      if (result[letter]) {
+        result[letter] += 1;
+      } else {
+        result[letter] = 1;
+      }
     }
+    return result;
+  } else {
+    return false;
   }
-  return result;
 };
 
 //Gords solution below!
@@ -34,8 +28,12 @@ const countLetters = (countLettersInMe) => {
     }
   } return results;
 };
+
+my original solution had  // result[letter] = (result[letter] || result.hasOwnProperty(letter)) + 1;
+at line 14 instead of the if/else, after speaking with Gord and reviewing his solution as well as
+ with some mentors I decided to change my solution to what you see here! the linter
+ seems to be happier with this solution also
  */
-console.log(countLetters("Lighthouse in the house"));
-console.log(countLetters("racecar"))
+
 
 module.exports = countLetters;

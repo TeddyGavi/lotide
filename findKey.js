@@ -44,4 +44,4 @@ assertEqual(findKey(starObject, x => x.stars === 1),  "Blue Hill"); //true
 assertEqual(findKey(starObject, x => x.stars === 3),  "Akaleri"); //true
 assertEqual(findKey(starObject, x => x.stars === 3),  "noma"); //false
 
-module.exports = findKey
+module.exports = findKey;

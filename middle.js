@@ -1,12 +1,12 @@
 /*
 
 Implement middle which will take in an array and return the middle-most element(s) of the given array.
-The middle function should return an array with only the middle element(s) of the provided array. 
+The middle function should return an array with only the middle element(s) of the provided array.
 This means that the length of the returned elements could vary.
 
-For arrays with one or two elements, there is no middle. Return an empty array. 
- input is an array, output is the middle value of the array, 
- this could be varying lengths depending on even or odd. for odd, its 1, 
+For arrays with one or two elements, there is no middle. Return an empty array.
+ input is an array, output is the middle value of the array,
+ this could be varying lengths depending on even or odd. for odd, its 1,
  for even its 2, unless the array length is 1 || 2
 
 */

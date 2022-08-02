@@ -38,3 +38,4 @@ const countLetters = (countLettersInMe) => {
 console.log(countLetters("Lighthouse in the house"));
 console.log(countLetters("racecar"))
 
+module.exports = countLetters;

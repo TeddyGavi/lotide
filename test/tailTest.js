@@ -1,21 +1,17 @@
-const assertArraysEqual = require("../assertArraysEqual");
-const assertEqual = require("../assertEqual");
+const chai = require("chai").assert
+const { assert } = require("chai");
 const tail = require("../tail");
 
-const result = tail(["Hello", "Lighthouse", "Labs"]);
-const resultEmpty = tail([]);
-const resultOne = tail(["Test"]);
+describe("#tail", () => {
+  it("return ['Lighthouse', 'Labs'] from ['Hello', 'Lighthouse', 'Labs']", () => {
+    assert.deepEqual(tail(["Hello", "Lighthouse", "Labs"]), ["Lighthouse", "Labs"])
+  });
 
+  it("returns ['top', 'Lighthouse', 'Labs'] from ['bubble', 'top', 'Lighthouse', 'Labs']", () => {
+    assert.deepEqual(tail(['bubble', 'top', 'Lighthouse', 'Labs']), ['top', 'Lighthouse', 'Labs'])
+  })
 
-
-//had to require the arrays equal function here in order to compare arrays in the following way.
-assertArraysEqual(tail(["Hello", "Lighthouse", "Labs"]), ["Lighthouse", "Labs"]);
-
-assertEqual(result.length, 2);
-assertEqual(result[0], "Lighthouse");
-assertEqual(result[1], "Labs");
-
-const words = ["bubble", "top", "Lighthouse", "Labs"];
-const wordsAfterTail = tail(words);
-assertEqual(words.length, 4);
-assertEqual(wordsAfterTail.length, 3);
+  it("returns [1, 2, 3, 4, 5] from ['1', 1, 2, 3, 4, 5]", () => {
+    assert.deepEqual(tail(['1', 1, 2, 3, 4, 5]), [1, 2, 3, 4, 5]);
+  })
+});

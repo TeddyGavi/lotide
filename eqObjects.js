@@ -10,14 +10,14 @@ const eqObjects = (object1, object2) => {
   const keys1 = Object.keys(object1);
   const keys2 = Object.keys(object2);
 
-//if the objects have different lengths they are not equal!
+  //if the objects have different lengths they are not equal!
 
   if (keys1.length !== keys2.length) {
     return false;
   }
   
-//first we make see if the values being compared are arrays, if yes we compare them using eqArrays
-//if not we compare the values of each object
+  //first we make see if the values being compared are arrays, if yes we compare them using eqArrays
+  //if not we compare the values of each object
 
   for (const x of keys1) {
     if (Array.isArray(object1[x])) {

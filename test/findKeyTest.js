@@ -1,4 +1,4 @@
-const assert = require("chai").assert
+const assert = require("chai").assert;
 const findLib = require("../findKey");
 
 
@@ -15,18 +15,18 @@ describe("#findKey will return the key which passes the required callback test \
   
   it("returns true if the object key returned passes the callback test", () => {
     assert.equal(findLib.findKey(starObject, x => x.stars === 2), "noma");
-  })
+  });
 
   it("returns true if the object key returned passes the callback test", () => {
     assert.equal(findLib.findKey(starObject, x => x.stars === 3), "Akaleri");
-  })
+  });
 
   it("#findKeyandReturnsanObj returns a object constructed of properties that pass the callback test", () => {
-    assert.deepEqual(findLib.findKey_Obj(starObject, x => x.stars === 2), { noma: { stars: 2 }, Ora: { stars: 2 } } )
-  })
+    assert.deepEqual(findLib.findKey_Obj(starObject, x => x.stars === 2), { noma: { stars: 2 }, Ora: { stars: 2 } });
+  });
 
   it("#findKeyandReturnsanObj returns a object constructed of properties that pass the callback test", () => {
-    assert.deepEqual(findLib.findKey_Obj(starObject, x => x.stars === 3), { Akaleri: { stars: 3 }, elBulli: { stars: 3}, Akelarre: { stars: 3 } } );
-  })
+    assert.deepEqual(findLib.findKey_Obj(starObject, x => x.stars === 3), { Akaleri: { stars: 3 }, elBulli: { stars: 3}, Akelarre: { stars: 3 } });
+  });
 
-})
+});

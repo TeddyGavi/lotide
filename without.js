@@ -26,7 +26,7 @@ const withoutF = (source, itemsToRemove) => {
 };
 
 
-// a new loop that i wasn't aware of that makes things way simplier
+// a new loop that i wasn't aware of that makes things way simpler
 //Ian taught me about the for ..in loop which returns the keys of each value, since arrays are objects this works well here
 
 const withoutAdd = (source, itemsToRemove) => {

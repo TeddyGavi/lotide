@@ -30,7 +30,7 @@ This project was created and published by me as part of my learnings at Lighthou
 The following functions are currently implemented:
 
 * `countLetters(string)`: This function takes a single argument, a string, and will return a object containing { letter: [appearanceCount] } spaces are ignored.
-* `countOnly(array, object)`: this function takes two arguments an array of items to count and an object that contains a boolean value to indicate if that key should be counted or not
+* `countOnly(array, object)`: This function takes two arguments an array of items to count and an object that contains a boolean value to indicate if that key should be counted or not
 if the key doesn't exist in the array undefined is returned.
 
 * `eqArrays(array1, array2)`: A function which takes in two arrays and returns true if they are equal, otherwise false (shallow).
@@ -51,5 +51,5 @@ if the key doesn't exist in the array undefined is returned.
 * `map(array, callback)`: This is my attempt at re-making the map function. This function takes two arguments, an array, and a callback, it returns a new array populated with elements from the callback this callback doesn't have to only return true, it could multiply or add etc.
 * `middle(array)`:A function that takes in an array and return the middle-most element(s if length is even) of the given array.
 * `tail(array)`: A function that returns all but the first element of an array.
-* `takeUntil(array, callback)`://this function takes two arguments, an array, and a callback. The function returns elements of the array to a new array until the callback condition is met.
+* `takeUntil(array, callback)`: This function takes two arguments, an array, and a callback. The function returns elements of the array to a new array until the callback condition is met.
 * `without(array, toRemove)`: This function takes two arguments a source array, and an item(s) to remove and return the array without those item(s).

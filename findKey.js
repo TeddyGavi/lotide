@@ -11,7 +11,7 @@ const findKey = function(object, callback) {
   }
 };
 
-//this function returns a new object populated with only the objects that pass the test, it is essentailly filtering
+//this function returns a new object populated with only the objects that pass the test, it is essentially filtering
 //this added functionality is a nicer to use, as the first function would stop as soon as a corresponding key: value pair was found
 
 const findKey_Obj = function(object, callback) {
@@ -26,6 +26,7 @@ const findKey_Obj = function(object, callback) {
 
 
 //i exported this as a library, must use dot notation to access
+
 module.exports = {
   findKey: findKey,
   findKey_Obj: findKey_Obj,

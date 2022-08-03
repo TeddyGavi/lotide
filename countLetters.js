@@ -1,6 +1,6 @@
 //this function takes a single argument, a string, and will return a object containing { letter: [appearanceCount]}
 //spaces are ignored
-//must recieve a string otherwise false is returned
+//must receive a string otherwise false is returned
 
 const countLetters = (countLettersInMe) => {
   if (typeof countLettersInMe === "string") {

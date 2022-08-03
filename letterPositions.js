@@ -1,6 +1,4 @@
-//loop through the given string, for each letter in the string, create an array
-//that contains the index of the letter in the string, this may be multiple numbers
-//return an object that contains each letter and the index that each letter occurs at
+//a function that takes a string and returns an object that contains each letter and the index that each letter occurs at
 
 const letterPositions = (sentence) => {
   const result = {};

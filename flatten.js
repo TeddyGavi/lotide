@@ -1,3 +1,6 @@
+//a function that takes an array with one level of nesting and returns the array without the nested elements
+//a very simple version here, this would be a good case for recursion if i have time in the future
+
 const flattenLoop = (oneNestedArray) => {
   const flattened = [];
   for (const ele of oneNestedArray) {

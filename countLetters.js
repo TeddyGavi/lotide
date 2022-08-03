@@ -1,3 +1,7 @@
+//this function will return a object containing the pattern { letter: [appearCount]}
+//spaces are ignored
+//must recieve a string otherwise false is returned
+
 const countLetters = (countLettersInMe) => {
   if (typeof countLettersInMe === "string") {
     const toCount = countLettersInMe.toLowerCase().replace(/\s/g, "");

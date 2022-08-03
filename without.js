@@ -1,5 +1,5 @@
 //my original solution
-//this function takes tow arguments a source array, and an item or items to remove, this will return the array without the items to remove
+//this function takes two arguments a source array, and an item or items to remove, this will return the array without the items to remove
 
 const without = (source, itemsToRemove) => {
   const filtered = [...source];

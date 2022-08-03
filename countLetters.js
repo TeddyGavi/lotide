@@ -1,4 +1,4 @@
-//this function will return a object containing the pattern { letter: [appearCount]}
+//this function takes a single argument, a string, and will return a object containing { letter: [appearanceCount]}
 //spaces are ignored
 //must recieve a string otherwise false is returned
 

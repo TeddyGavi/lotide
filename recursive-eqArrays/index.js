@@ -1,9 +1,13 @@
+//a function which takes two arrays and returns true if they are equal, this function works with any level of nested arrays
+
+
+//helper function to determine is an array is an array
+
 const isArray = (arr) => {
   if (Array.isArray(arr)) {
     return true;
   }
 };
-
 
 const eqArraysRecursion = (arrayOne, arrayTwo) => {
   if (!arrayOne || !arrayTwo) {
@@ -23,13 +27,5 @@ const eqArraysRecursion = (arrayOne, arrayTwo) => {
   }
   return true;
 };
-
-
-
-// console.log(eqArraysRecursion([2, 3], [2, 3]))
-// console.log(eqArraysRecursion([[2, 3], [4]], [[2, 3], [4]])) // => true
-// console.log(eqArraysRecursion([[2, 3], [4]], [[2, 3], [4, 5]])) // => false
-// console.log(eqArraysRecursion([[2, 3], [4]], [[2, 3], 4])) // => false
-
 
 module.exports = eqArraysRecursion;

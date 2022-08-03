@@ -22,11 +22,11 @@ describe("#findKey will return the key which passes the required callback test \
   })
 
   it("#findKeyandReturnsanObj returns a object constructed of properties that pass the callback test", () => {
-    assert.deepEqual(findLib.findKeyAndReturnsAnObj(starObject, x => x.stars === 2), { noma: { stars: 2 }, Ora: { stars: 2 } } )
+    assert.deepEqual(findLib.findKey_Obj(starObject, x => x.stars === 2), { noma: { stars: 2 }, Ora: { stars: 2 } } )
   })
 
   it("#findKeyandReturnsanObj returns a object constructed of properties that pass the callback test", () => {
-    assert.deepEqual(findLib.findKeyAndReturnsAnObj(starObject, x => x.stars === 3), { Akaleri: { stars: 3 }, elBulli: { stars: 3}, Akelarre: { stars: 3 } } );
+    assert.deepEqual(findLib.findKey_Obj(starObject, x => x.stars === 3), { Akaleri: { stars: 3 }, elBulli: { stars: 3}, Akelarre: { stars: 3 } } );
   })
 
 })

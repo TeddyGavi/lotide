@@ -1,15 +1,6 @@
-const { eqObjects } = require("../assertObjectsEqual");
-const { eqArrays } = require("../assertObjectsEqual");
+//a recursive solution to deal with nested objects only
 
-const cd = {
-  c: "1",
-  d: ["2", 3]
-};
-
-const dc = {
-  d: ["2", 3],
-  c: "1",
-};
+const eqArrays  = require("../eqArrays");
 
 const eqObjectsRecursion = (object1, object2) => {
   const keys1 = Object.keys(object1);
@@ -18,7 +9,7 @@ const eqObjectsRecursion = (object1, object2) => {
     return false;
   }
   for (const x of keys1) {
-    if (Array.isArray(object1[x])) {
+    if (isArray(object1[x])) {
       if (!eqArrays(object1[x], object2[x])) {
         return false;
       }
@@ -33,6 +24,7 @@ const eqObjectsRecursion = (object1, object2) => {
   return true;
 };
 
+// two helper function that determine whether an object is an object or if an array is an array! :)
 
 const isObject = (object) => {
   if (typeof object === "object" && !Array.isArray(object)) {
@@ -49,36 +41,5 @@ const isArray = (arr) => {
 };
 
 
-
-console.log(eqObjectsRecursion({ a: { z: 1 }, b: 2 }, { a: { z: 1 }, b: 2 })); // => tru
-console.log(eqObjectsRecursion({ a: { y: 0, z: 1 }, b: 2 }, { a: { z: 1 }, b: 2 })); // => false
-console.log(eqObjectsRecursion({ a: { y: 0, z: 1 }, b: 2 }, { a: 1, b: 2 })); // => false
-console.log(eqObjectsRecursion({ a: { z: 1, y: { w: 3 }, }, b: 2 }, { a: { z: 1, y: { w: 3 }, }, b: 2 })); true;
-console.log(eqObjectsRecursion(cd, dc)); // => true
-
-
-
-
-
-
-
-
 module.exports = eqObjectsRecursion;
 
-
-/*
-const keys1 = Object.keys(object1);
-if (keys1.length !== Object.keys(object2).length) {
-  return false;
-}
-else {
-  for (const x of keys1) {
-    // console.log(object1[x], object2[x])
-    // console.log(Array.isArray(object1[x]))
-
-     if (Array.isArray(object1[x]) && !eqArrays(object1[x], object2[x])) {
-      return false;
-     }
-     else if (object1[x] !== object2[x]) {
-      return false;
-     } */

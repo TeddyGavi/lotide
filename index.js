@@ -5,7 +5,7 @@ const countLetters = require("./countLetters");
 const countOnly = require("./countOnly");
 const eqArrays = require("./eqArrays");
 const eqObjects = require("./eqObjects");
-const findKey = require("./findKey");
+const findLib = require("./findKey");
 const findKeyByValue = require("./findKeyByValue");
 const flatten = require("./flatten");
 const letterPositions = require("./letterPositions");
@@ -23,7 +23,8 @@ module.exports = {
   eqArraysRecursion,
   eqObjects,
   eqObjectsRecursion,
-  findKey,
+  findLib: findLib.findKey,
+  findLib: findLib.findKeyAndReturnsAnObj,
   findKeyByValue,
   flatten,
   head,

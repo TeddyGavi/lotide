@@ -44,7 +44,7 @@ const btm = {
   b: [2, 2, 2, 2],
 };
 
-describe("#eqObjects compares two if two objects are equal (shallow)", () => {
+describe("#eqObjects compares if two objects are equal (shallow)", () => {
   it("returns true if the objects are equal", () => {
     assert.isTrue(eqObjects(ab, ba));
   });

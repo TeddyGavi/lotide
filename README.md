@@ -12,11 +12,11 @@ This project was created and published by me as part of my learnings at Lighthou
 
 **Install it:**
 
-`npm install @TeddyGavi/lotide`
+`npm install @mat.davis/lotide`
 
 **Require it:**
 
-`const _ = require('@TeddyGavi/lotide');`
+`const _ = require('@mat.davis/lotide');`
 
 **Call it:**
 

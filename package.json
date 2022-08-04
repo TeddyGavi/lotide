@@ -1,5 +1,5 @@
 {
-  "name": "lotide",
+  "name": "@TeddyGavi/lotide",
   "version": "1.0.0",
   "description": "A simple clone of the Lodash library. Intended for learning purposes",
   "main": "assertArraysEqual.js",
@@ -13,7 +13,12 @@
     "type": "git",
     "url": "git+https://github.com/TeddyGavi/lotide.git"
   },
-  "keywords": ["clone", "copy", "Lodash", "lotide"],
+  "keywords": [
+    "clone",
+    "copy",
+    "Lodash",
+    "lotide"
+  ],
   "author": "Matt C. Davis",
   "license": "ISC",
   "bugs": {

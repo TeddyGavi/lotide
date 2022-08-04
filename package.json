@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/TeddyGavi/lotide.git"
+    "url": "https://github.com/TeddyGavi/lotide.git"
   },
   "keywords": [
     "clone",
@@ -28,5 +28,8 @@
   "devDependencies": {
     "chai": "^4.3.6",
     "mocha": "^10.0.0"
+  },
+  "dependencies": {
+    "lotide": "^1.0.1"
   }
 }

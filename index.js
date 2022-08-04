@@ -12,17 +12,14 @@ const letterPositions = require("./letterPositions");
 const map = require("./map");
 const takeUntil = require("./takeUntil");
 const without = require("./without");
-const eqArraysRecursion = require("./recursive-eqArrays/index");
-const eqObjectsRecursion = require("./recursive-eqObjects/index");
+
 
 module.exports = {
   
   countLetters,
   countOnly,
   eqArrays,
-  eqArraysRecursion,
   eqObjects,
-  eqObjectsRecursion,
   findLib,
   findKeyByValue,
   flatten,

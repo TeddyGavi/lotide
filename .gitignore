@@ -4,5 +4,5 @@ assertObjectsEqual.js
 assertEqual.js
 test/assertEqualTest.js
 test/assertArraysEqualTest.js
-recursive-eqArrays/node_modules
-recursive-eqObjects/node_modules
+recursive-eqArrays/
+recursive-eqObjects/

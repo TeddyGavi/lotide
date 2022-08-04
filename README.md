@@ -33,12 +33,9 @@ The following functions are currently implemented:
 * `countOnly(array, object)`: This function takes two arguments an array of items to count and an object that contains a boolean value to indicate if that key should be counted or not
 if the key doesn't exist in the array undefined is returned.
 
-* `eqArrays(array1, array2)`: A function which takes in two arrays and returns true if they are equal, otherwise false (shallow).
+* `eqArrays(array1, array2)`: A function which takes in two arrays and returns true if they are equal, false otherwise. This function works with any level of nested arrays.
 
-* `eqArraysRecursion(array1, array2)`: A function which takes in two arrays and returns true if they are equal, false otherwise. This function works with any level of nested arrays (shallow).
-
-* `eqObjects(obj1, obj2)`: A function which takes in two objects and returns true if they are equal, false otherwise. (shallow)
-* `eqObjectsRecursion(obj1, obj2)`: A function which takes in two objects and returns true if they are equal, false otherwise. This function can handle nested objects only (shallow).
+* `eqObjects(obj1, obj2)`: A function which takes in two objects and returns true if they are equal, false otherwise. This function can handle nested data.
 * `findLib {... `: An Object that contains the following: 
   * `.findKey(object, callback)`: A function which takes in an object and a callback and returns the key as soon as the callback is true.
   * `.findKey_Obj(object, callback)`: A function which takes in an object and a callback and returns an object that contains the properties that pass the callback test. This is essentially filtering \

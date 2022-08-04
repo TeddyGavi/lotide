@@ -1,6 +1,6 @@
 const { assert } = require("chai");
 const countLetters = require("../countLetters");
-const chai = require("chai").assert;
+
 
 describe("#countLetters: The function should take in a sentence (as a string) and then return a count of each of the letters in that sentence.", () => {
   it("returns an object with the proper count. 'LHL' => {l: 2, h: 1}", () => {
